@@ -9,7 +9,7 @@ export default async function RootLayout({ children }) {
     <html lang="en">
       <body>
         <nav>
-          {!!session && 
+          {session && 
           <div className="w-full justify-between flex px-6 mt-2">
             Welcome, {session.user.name}
             <Logout />
